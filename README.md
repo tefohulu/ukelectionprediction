@@ -16,13 +16,23 @@ The twitter analysis of election is useful to predict the winner of the election
 
 # Data Analytic Design
 
-The topology is shown below. It contains one Spout and three Bolts, for counting, splitting, and ignoring words. In ignoring word bolt, there are one additional feature to include the election keywords. Word splitter splits the tweets into words, deletes all the punctuations, and change all the tweet letters to lower case. The ignoring words bolt will delete and add the words to be counted on word counting bolt. 
+The topology is shown below. It contains one Spout and three Bolts, for counting, splitting, and ignoring words. 
 
-The keywords are the twitter names of parties and their leaders, shown in Appendix B. These keywords represent hashtags (#Conservatives), mentions (@Conservatives), and occurrence in tweets (Conservatives). Hashtags, mentions, and occurrence are considered as a single word, because all of it considered as an interaction between twitter accounts and the Parties.
+![Topology](https://github.com/tefohulu/ukelectionprediction/blob/master/Appendix%20A%20-%20Topology.jpg)
+
+In ignoring word bolt, there are one additional feature to include the election keywords. Word splitter splits the tweets into words, deletes all the punctuations, and change all the tweet letters to lower case. The ignoring words bolt will delete and add the words to be counted on word counting bolt. 
+
+The keywords are the twitter names of parties and their leaders, shown below. These keywords represent hashtags (#Conservatives), mentions (@Conservatives), and occurrence in tweets (Conservatives). Hashtags, mentions, and occurrence are considered as a single word, because all of it considered as an interaction between twitter accounts and the Parties.
+
+![Keywords](https://github.com/tefohulu/ukelectionprediction/blob/master/Appendix%20B.JPG)
 
 # Results
 
-This program begins the run on 11.00 pm on 8th of December and ends in the next 24 hours. The results are shown in Appendix C and D, showing the results in Pie Chart and results from the terminal. It shows the results every 5 seconds. 
+This program begins the run on 11.00 pm on 8th of December and ends in the next 24 hours. The results are shown below, showing the results in Pie Chart and results from the terminal. It shows the results every 5 seconds. 
+
+![Results](https://github.com/tefohulu/ukelectionprediction/blob/master/Appendix%20C%20-%20Prediction%20Result.jpg)
+
+![Screenshot](https://github.com/tefohulu/ukelectionprediction/blob/master/Appendix%20D%20-%20Result%20Screenshot.jpg)
 
 The analysis also only shows the results from the major parties from England, Scotland, and Wales because those parties have the most votes in last election.
 
@@ -30,7 +40,11 @@ The results shown that the Conservative Party will win the election with a huge 
 
 # Discussions of Results
 
-The real results of the election successfully predict the top four parties that wins the election : Conservatives, Labour, SNP, and Libdems, with the position of SNP and Libdems swapped on the real result. However, the prediction results failed to predict votes percentage. Green Party and Brexit Party did not get a single vote. The real results of the election are shown in Appendix E, and the comparison shows in Appendix F.
+The real results of the election successfully predict the top four parties that wins the election : Conservatives, Labour, SNP, and Libdems, with the position of SNP and Libdems swapped on the real result. However, the prediction results failed to predict votes percentage. Green Party and Brexit Party did not get a single vote. The real results of the election and the comparison shows below.
+
+![RealResult](https://github.com/tefohulu/ukelectionprediction/blob/master/Appendix%20E%20-%20Real%20result%20of%20the%20Election.jpg)
+
+![Comparison](https://github.com/tefohulu/ukelectionprediction/blob/master/Appendix%20F.JPG)
 
 Although the twitter prediction successfully predicts Conservatives as the winner of the election, the rest of the prediction is quite far from the real results, as it did not accurately predict the percentage of votes for each party. The prediction result of the General Election of is won by the Conservative Party, followed by the Labour Party. The next-placed parties are Libdems, Brexit Party, SNP, Green, Cymru, and Change. 
 
